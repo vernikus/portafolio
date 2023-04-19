@@ -1,30 +1,120 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+  import NavBar from './components/NavBar.vue'
+  import Media from './components/Media.vue'
+  import Proyect from './components/Proyect.vue'
+  import MaquinaEscribir from './components/MaquinaEscribir.vue'
+  import { onMounted } from 'vue';  
+  import { technologies,media,proyects} from './data';
+
+
+  
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <NavBar/>
+  <header>
+      <div class="container-name">
+        <span>Hola me llamo</span>
+        <div class="name">
+          <h1>Jonathan Enriquez</h1>
+          <span>(Michingon)</span>
+        </div>
+        <p>Soy un desarrollador frontend jr, en constante búsqueda de mejorar mis skills, 
+        siempre dispuesto a tomar nuevos retos, tanto laborales como personales.</p>
+      </div>
+      <div class="container-media">
+        <ul>
+          <Media
+          v-for="{pathUrl,nameMedia,url} in media"
+          :key="pathUrl"
+          :pathUrl="pathUrl"
+          :nameMedia="nameMedia"
+          :url="url"
+          />
+        </ul>
+      </div>
+      <MaquinaEscribir></MaquinaEscribir>
+  </header>
+  
+  <main>  
+    <section class="container-technologies">
+      <div class="about-me">
+        <h2>About me</h2>
+        <p></p>
+      </div>
+      <div class="techcnologies">
+        <h2>Technologies</h2>
+        <div class="container-media">
+          <ul >
+            <Media
+            v-for="{pathUrl,nameMedia} in technologies"
+            :key="pathUrl"
+            :pathUrl="pathUrl"
+            :nameMedia="nameMedia"
+            />
+          </ul>  
+        </div>
+      </div>
+    </section>
+    <section class="container-proyects">
+      <h2>Proyectos</h2>
+      <Proyect
+      v-for="{pathUrl,title,text,technologies,demo} in proyects"
+      :key="pathUrl"
+      :pathUrl="pathUrl"
+      :title="title"
+      :text="text"
+      :technologies="technologies"
+      :demo="demo"
+      >
+      <a :href="demo" target="_blank">Demo</a>
+      </Proyect>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-contaier">
+      <h3>Contacto</h3>
+      <span>Contactame para trabajar juntos</span>
+    </div>
+    <div class="container-media">
+      <ul>
+        <Media
+        v-for="{pathUrl,nameMedia,url} in media"
+        :key="pathUrl"
+        :pathUrl="pathUrl"
+        :nameMedia="nameMedia"
+        :url="url"
+        />
+      </ul>
+    </div>
+    <span>© 2022-2023 | Jonathan Enriquez.</span>
+  </footer>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+  header{
+    height: 100vh;
+  }
+
+  .container-name{
+    font-size: xx-large;
+    padding: 50px;
+  }
+  .name > span , h1{
+    display: inline-block;
+  }
+
+  .name > span{
+    margin-left: 30px;
+    margin-bottom: 100px;
+    opacity: .8;
+  }
+  header > .container-media{
+  text-align: end;
+  margin-right: 30px;
+
+  }
+ 
+
 </style>

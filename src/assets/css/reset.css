@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   padding: 0 100px;
+    color: #414552;
+}
+
+a:active{
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+
