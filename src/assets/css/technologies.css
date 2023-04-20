@@ -1,0 +1,41 @@
+.container-technologies{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5%;
+    justify-items: end;
+  }
+  .container-technologies  h2{
+    margin-bottom: 20px;
+  }
+  .container-technologies > .about-me > p{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  
+  .container-technologies > .technologies > h2{
+    margin-left: 13%;
+  }
+  .technologies{
+    width: 100%;
+  }
+  .technologies > .container-media >  ul{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3,1fr);
+  
+  }
+  
+  .technologies > .container-media > ul > li{
+    display: block;
+  }
+  .technologies > .container-media > ul > li::before{
+    content: none;
+    
+  }
+  
+  .technologies > .container-media > ul > li > a > img {
+    width: 40px;
+    height: 40px;
+  
+  }

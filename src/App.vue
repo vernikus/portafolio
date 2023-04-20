@@ -3,7 +3,6 @@
   import Media from './components/Media.vue'
   import Proyect from './components/Proyect.vue'
   import MaquinaEscribir from './components/MaquinaEscribir.vue'
-  import { onMounted } from 'vue';  
   import { technologies,media,proyects} from './data';
 
 
@@ -33,16 +32,21 @@
           />
         </ul>
       </div>
-      <MaquinaEscribir></MaquinaEscribir>
+      <MaquinaEscribir/>
   </header>
   
   <main>  
     <section class="container-technologies">
       <div class="about-me">
-        <h2>About me</h2>
-        <p></p>
+        <h2>Sobre mi</h2>
+        <p>Hola, soy Jonathan Desarrollador Web Fronted,
+          enfocado en el desarrollo y diseño de sitios web, que se adapten a tus necesidades y soluciones tus problemas.
+        </p>
+        <p>
+          Me gusta aprender cosas nuevas y practicar constantemente lo que aprendo, estudio diariamente para perfeccionarme y ampliar mis conocimientos.
+        </p>
       </div>
-      <div class="techcnologies">
+      <div class="technologies">
         <h2>Technologies</h2>
         <div class="container-media">
           <ul >
@@ -92,29 +96,7 @@
   </footer>
 </template>
 
-<style scoped>
-  header{
-    height: 100vh;
-  }
+<style>
 
-  .container-name{
-    font-size: xx-large;
-    padding: 50px;
-  }
-  .name > span , h1{
-    display: inline-block;
-  }
-
-  .name > span{
-    margin-left: 30px;
-    margin-bottom: 100px;
-    opacity: .8;
-  }
-  header > .container-media{
-  text-align: end;
-  margin-right: 30px;
-
-  }
- 
 
 </style>

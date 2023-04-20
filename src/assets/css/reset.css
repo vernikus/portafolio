@@ -17,4 +17,10 @@ ul{
     list-style: none;
 }
 
+h2{
+    font-size: xx-large;
+}
 
+main,footer{
+    padding: 50px;
+}

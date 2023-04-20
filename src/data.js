@@ -64,7 +64,11 @@ const proyects = [
     demo: "https://vernikus.github.io/Maquetaciones//Explorer/html/home.html",
   },
 ];
+const textAnimate = [
+  'Hola reclutador!!',
+  '¿Como te puedo ayudar?',
+  'Bienvenido a mi portafolio'
+]
 
 
-
-export { technologies, media, proyects};
+export { technologies, media, proyects,textAnimate};

@@ -1,10 +1,6 @@
 <script setup>
 import { onMounted,ref } from 'vue';    
-const textAnimate = [
-  'Hola reclutador!!',
-  '¿Como te puedo ayudar?',
-  'Bienvenido a mi portafolio'
-]
+import {textAnimate} from '../data'
 
 const messageIndex = ref(0)
 const message = ref([])
@@ -15,16 +11,16 @@ const animateMessage = () =>{
     message.value =  textAnimate[messageIndex.value].split('')
     span.value = document.getElementsByClassName('typing')[0]
     span.value.innerHTML = ''
-    let textLength = textAnimate[messageIndex.value].length
+    const textLength = ref(textAnimate[messageIndex.value].length)
     setInterval(()=>{
         if (count.value === message.value.length) {
-            span.value.innerHTML = textAnimate[messageIndex.value].substring(0,textLength)
-            textLength--
-        if (textLength === 0) {
+            span.value.innerHTML = textAnimate[messageIndex.value].substring(0,textLength.value)
+            textLength.value--
+        if (textLength.value === 0) {
             span.value.innerHTML = ''
             count.value = 0
             messageIndex.value == 2 ? messageIndex.value = 0 : messageIndex.value++
-            textLength = textAnimate[messageIndex.value].length
+            textLength.value = textAnimate[messageIndex.value].length
             message.value = textAnimate[messageIndex.value].split('')
         }
         } else {
@@ -32,8 +28,6 @@ const animateMessage = () =>{
             count.value++
         }
     }, 150)
-
-
 }
 
     onMounted(()=>{
@@ -49,9 +43,6 @@ const animateMessage = () =>{
 </template>
 
 <style scoped>
-div{
-    padding: 50px;
-}
 span.typing{
     letter-spacing: 10px;
     font-size:60px;
