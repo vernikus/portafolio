@@ -39,6 +39,7 @@
     <section class="container-technologies">
       <div class="about-me">
         <h2>Sobre mi</h2>
+        <span class="line"></span>
         <p>Hola, soy Jonathan Desarrollador Web Fronted,
           enfocado en el desarrollo y diseño de sitios web, que se adapten a tus necesidades y soluciones tus problemas.
         </p>
@@ -47,7 +48,8 @@
         </p>
       </div>
       <div class="technologies">
-        <h2>Technologies</h2>
+        <h2>Tecnologías</h2>
+        <span class="line"></span>
         <div class="container-media">
           <ul >
             <Media
@@ -62,6 +64,7 @@
     </section>
     <section class="container-proyects">
       <h2>Proyectos</h2>
+      <span class="line"></span>
       <Proyect
       v-for="{pathUrl,title,text,technologies,demo} in proyects"
       :key="pathUrl"
@@ -71,14 +74,15 @@
       :technologies="technologies"
       :demo="demo"
       >
-      <a :href="demo" target="_blank">Demo</a>
+      <a :href="demo" target="_blank" class="demo">Demo</a>
       </Proyect>
     </section>
   </main>
 
   <footer>
     <div class="contact-contaier">
-      <h3>Contacto</h3>
+      <h2>Contacto</h2>
+      <span class="line"></span>
       <span>Contactame para trabajar juntos</span>
     </div>
     <div class="container-media">

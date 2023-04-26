@@ -50,14 +50,7 @@ const classAdd = () =>{
         z-index: 100;
     }
 
-    div > .line{
-        height: 4px;
-        width: 100%;
-        margin-top: 5px;
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,255,45,0.9948354341736695) 0%, rgba(0,212,255,1) 100%);
-        display: block;
-    }
-    div.burger-menu{
+       div.burger-menu{
         display: none;
         cursor: pointer;
         width: 45px;
