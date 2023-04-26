@@ -1,3 +1,15 @@
 .container-media:nth-child(4) > ul > li{
-    background-color: aqua; 
+    background-color: coral; 
+
+
 }
+/* .container-media:nth-child(odd) > ul > li{
+    background-color: coral; 
+
+
+} */
+/* .container-media:nth-child(even) > ul > li{
+    background-color: coral; 
+
+
+} */
