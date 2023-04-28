@@ -1,0 +1,11 @@
+.contact-contaier > span:nth-child(3){
+    margin-top: 20px;
+    display: block;
+}
+
+footer > .container-media{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}

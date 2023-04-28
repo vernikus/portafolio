@@ -11,7 +11,7 @@
 
 <template>
   <NavBar/>
-  <header>
+  <header id="header">
       <div class="container-name">
         <span>Hola me llamo</span>
         <div class="name">
@@ -36,7 +36,7 @@
   </header>
   
   <main>  
-    <section class="container-technologies">
+    <section id="tecnologias" class="container-technologies">
       <div class="about-me">
         <h2>Sobre mi</h2>
         <span class="line"></span>
@@ -62,7 +62,7 @@
         </div>
       </div>
     </section>
-    <section class="container-proyects">
+    <section id="proyectos" class="container-proyects">
       <h2>Proyectos</h2>
       <span class="line"></span>
       <Proyect
@@ -79,7 +79,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="footer">
     <div class="contact-contaier">
       <h2>Contacto</h2>
       <span class="line"></span>
@@ -95,8 +95,8 @@
         :url="url"
         />
       </ul>
+      <span>© 2022-2023 | Jonathan Enriquez.</span>
     </div>
-    <span>© 2022-2023 | Jonathan Enriquez.</span>
   </footer>
 </template>
 

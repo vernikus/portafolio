@@ -29,9 +29,9 @@ const classAdd = () =>{
                 <span class="burger "></span>
             </div>
             <ul class="menu">
-                <li><a href="">Inicio</a><span></span></li>
-                <li><a href="">Tecnologías</a><span></span></li>
-                <li><a href="">Proyectos</a><span></span></li>
+                <li><a href="#header">Inicio</a><span></span></li>
+                <li><a href="#tecnologias">Tecnologías</a><span></span></li>
+                <li><a href="#proyectos">Proyectos</a><span></span></li>
             </ul>
         </nav>
 </template>

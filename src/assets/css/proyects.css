@@ -1,15 +1,10 @@
-.container-media:nth-child(4) > ul > li{
-    background-color: coral; 
-
+/* .container-proyects > .container-info:nth-child(even) {
+    margin: 150px 0;
+} */
+.container-proyects > .container-info:nth-child(even) img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
 
 }
-/* .container-media:nth-child(odd) > ul > li{
-    background-color: coral; 
 
-
-} */
-/* .container-media:nth-child(even) > ul > li{
-    background-color: coral; 
-
-
-} */

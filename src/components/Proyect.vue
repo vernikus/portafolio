@@ -57,7 +57,7 @@ const props = defineProps(
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
-    margin-top: 30px;
+    margin: 50px 0;
 }
 
 .container-info  p{
@@ -67,12 +67,5 @@ img{
     width: 300px;
     height: 300px
 }
-/* .container-info:nth-child(2) > img{
-    grid-column: 1/2;
-    grid-row: 1/2;
-
-} */
-
-
 </style>
 
