@@ -22,3 +22,24 @@ header > .container-media {
     text-align: end;
     margin-right: 30px;
 }
+
+@media screen and (max-width:800px) {
+    header{
+        padding: 25px 25px 0 25px;
+    }
+    .container-name > p{
+        text-align: justify;
+    }
+    .name{
+        text-align: center  ;
+        margin-right: -18%;
+    }
+    .name > span{
+        margin: 15px;
+    }
+
+    header > .container-media{
+        text-align: center;
+        margin: 25px 0;
+    }
+}

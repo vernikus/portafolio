@@ -53,4 +53,7 @@ span.typing{
 @keyframes blink{
     50%{border: transparent;}
 }
+/* .container-print{
+    display: none;
+} */
 </style>

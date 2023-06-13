@@ -45,7 +45,7 @@ const classAdd = () =>{
         padding: 20px 0px;
         font-size: 30px;
         position: sticky;
-        top: 0px;
+        top: 0;
         background-color: white;
         z-index: 100;
     }
@@ -102,21 +102,23 @@ const classAdd = () =>{
 
     @media  screen and (max-width:800px) {
         ul.menu{
-            display: none;
             flex-direction: column;
             align-items: center;
             position: absolute;
-            top:-100px;
-            left: -100px;
-            height: 90vh;
+            top:-100vh;
+            left: -100vw;
+            opacity: 0;
+            height: 100vh;
             width: 100%;
-            border-radius: 0 0 25% 0;
-            background-color: coral;
+            background-color: #000000e6;
+            transition: all .5s ease;
         }
         ul.activate{
-            display: flex;
-            transition: all 1s ease;
-            transform: translate(100px,180px);
+            transition: all .5s ease;
+            top: 83px;
+            left: 0;
+            border-radius: 0 0 250px 0;
+            opacity: .9;
         }
         nav{
             padding: 20px 20px;

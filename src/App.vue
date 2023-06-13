@@ -102,5 +102,11 @@
 
 <style>
 
+main{
+  display: none;
+}
 
+footer{
+  display: none;
+}
 </style>
